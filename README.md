@@ -1,6 +1,6 @@
 # PWEB_C_14
 
-Tugas akhir mata kuliah pemrograman website<br>
+Tugas akhir mata kuliah perancangan website<br>
 Kelas : C<br>
 Kelompok : 14<br>
 Anggota :
