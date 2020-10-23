@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container flex-row">
+            <div>
+                <a href="index.html" id="teks-lapaktani"><span>LAPAK</span>TANI</a>
+            </div>
+            <div class="flex-row">
+                <a href="index.html#katalog" class="navigasi">Katalog</a>
+                <a href="index.html#tentang" class="navigasi">Tentang</a>
+                <a href="index.html#kontak" class="navigasi">Kontak</a>
+                <div class="flex-row" id="pencarian">
+                    <input type="text" placeholder="Coba cari Rosa">
+                    <a href="katalog.html" id="icon-pencarian">
+                        <img src="icon/pencarian.png" alt="cari" class="icon">
+                    </a>
+                </div>
+                <a href="keranjang.html">
+                    <img src="icon/keranjang.png" alt="keranjang" class="icon">
+                </a>
+            </div>
+            <div class="flex-row">
+                <a href="masuk.html">Masuk</a>
+                <a href="daftar.html" class="button-pendek button-warna">Daftar</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container flex-column">
+            <div id="formulir" class="flex-column">
+                <form action="proses.php" method="POST" class="rata-tengah">
+                    <div class="flex-row flex-center">
+                        <a href="daftar.html" class="button-pendek button-warna">Daftar</a>
+                        <a href="masuk.html" class="button-pendek button-putih">Masuk</a>
+                    </div>
+                    <div class="flex-column">
+                        <a href="facebook.com" class="flex-row button-panjang facebook">
+                            <img src="icon/facebook.png" alt="logo facebook" class="medsos">
+                            <div class="medsos">Masuk dengan Facebook</div>
+                        </a>
+                        <a href="google.com" class="flex-row button-panjang google">
+                            <img src="icon/google.png" alt="logo google" class="medsos">
+                            <div class="medsos">Masuk dengan Google</div>
+                        </a>
+                    </div>
+                    <div class="teks-hitam">-atau-</div>
+                    <div class="flex-column">
+                        <input type="email" name="" id="" placeholder="Email">
+                        <input type="password" name="" id="" placeholder="Password">
+                    </div>
+                    <div>
+                        <button type="submit" class="button-panjang button-warna">Masuk</button>
+                    </div>
+                    <div><a href="lupa-password.html" class="teks-hitam">Lupa password?</a></div>
+                    <div><a href="daftar.html" class="teks-hitam">Belum punya akun? Daftar</a></div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
