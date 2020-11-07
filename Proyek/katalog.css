@@ -51,6 +51,11 @@ main div.grid-item {
     font-size: 30px;
     text-align: center;
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;
 }
 main div.grid-item img {
     width: 200px;
