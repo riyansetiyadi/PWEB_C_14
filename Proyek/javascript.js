@@ -1,4 +1,4 @@
-function masuk(){
+function formMasuk(){
     var email = document.forms["masuk"]["email"].value;
     var password = document.forms["masuk"]["password"].value;
     if (email == "") {
@@ -8,9 +8,9 @@ function masuk(){
         alert("Password harus diisi");
         return false;
     } 
-    alert("Anda berhasil masuk")
+    alert("Anda berhasil masuk");
 }
-function daftar(){
+function formDaftar(){
     var email = document.forms["daftar"]["email"].value;
     var password = document.forms["daftar"]["password"].value;
     if (email == "") {
@@ -20,15 +20,14 @@ function daftar(){
         alert("Password harus diisi");
         return false;
     } 
-    alert("Anda berhasil mendaftar, silahkan masuk")
+    alert("Anda berhasil mendaftar, silahkan masuk");
 }
 function ubahPassword(){
-    var mail = document.forms["ubah"]["email"].value;
-    if (mail==""){
+    var email = document.forms["ubah"]["email"].value;
+    if (email==""){
         alert('isi email anda');
         return false;
-    }
-    else if (mail.length>0){
+    } else if (mail.length>0){
         alert("tautan ubah password telah dikirim ke email "+ mail);
         return false;
     }
