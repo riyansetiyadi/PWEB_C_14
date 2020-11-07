@@ -5,6 +5,7 @@ body {
 h1 {
     font-size: 60px;
     padding-top: 100px;
+    font-family: Qualy;
 }
 select, input {
     background-color: transparent;
