@@ -55,7 +55,6 @@ main div.grid-item {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 250px;
     height: 400px;
 }
 main div.grid-item img {
