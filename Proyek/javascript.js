@@ -1,4 +1,4 @@
-function validasiForm(){
+function Masuk(){
     var email = document.forms["masuk"]["email"].value;
     var password = document.forms["masuk"]["password"].value;
     if (email == "") {
