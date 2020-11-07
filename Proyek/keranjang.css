@@ -7,12 +7,23 @@ h1 {
     padding-top: 100px;
     font-family: Qualy;
 }
+select, input {
+    background-color: transparent;
+    border: white solid 2px;
+    border-radius: 5px;
+    width: 100%;
+}
+
 main div.grid-content {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: auto 350px;
+    margin-bottom: 100px;
 }
 main div.grid-content div {
+    min-height: 350px;
+}
+main div.grid-content table {
     background: #9AA684;
     opacity: 0.75;
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
@@ -29,4 +40,6 @@ main table tr td#tombol-beli {
     padding-top: 20px;
     text-align: center;
 }
-
+main aside {
+    position: fixed;
+}
