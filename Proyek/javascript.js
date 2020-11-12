@@ -27,8 +27,8 @@ function ubahPassword(){
     if (email==""){
         alert('isi email anda');
         return false;
-    } else if (mail.length>0){
-        alert("tautan ubah password telah dikirim ke email " + mail);
+    } else if (email.length>0){
+        alert("tautan ubah password telah dikirim ke email " + email);
         return false;
     }
 }
