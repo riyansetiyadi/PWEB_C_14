@@ -173,6 +173,9 @@ footer {
     align-items: center;
     justify-content: space-around;
   }
+  nav a#teks-lapaktani {
+    text-align: center;
+  }
   nav div#pencarian input {
     width: auto;
   }
