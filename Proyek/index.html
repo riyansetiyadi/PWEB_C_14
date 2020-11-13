@@ -10,14 +10,17 @@
 	
 	<body>
 		<nav>
-			<div class="container flex-row">
-				<div>
-					<a href="index.html" id="teks-lapaktani"><span>LAPAK</span>TANI</a>
-				</div>
-				<div class="flex-row">
-					<a href="index.html#katalog" class="navigasi">Katalog</a>
-					<a href="index.html#tentang" class="navigasi">Tentang</a>
-					<a href="index.html#kontak" class="navigasi">Kontak</a>
+			<div class="container flex-row">	
+				<a href="index.html" id="teks-lapaktani"><span>LAPAK</span>TANI</a>
+				<div class="flex-row fixed">
+					<div>
+						<button class="tombol-dropdown">Menu</button>
+						<div class="flex-row dropdown-child">
+							<a href="index.html#katalog" class="navigasi">Katalog</a>
+							<a href="index.html#tentang" class="navigasi">Tentang</a>
+							<a href="index.html#kontak" class="navigasi">Kontak</a>
+						</div>
+					</div>
 					<div class="flex-row" id="pencarian">
 						<input type="text" placeholder="Coba cari Rosa">
 						<a href="katalog.html" id="icon-pencarian">
@@ -28,7 +31,7 @@
 						<img src="icon/keranjang.png" alt="keranjang" class="icon">
 					</a>
 				</div>
-				<div class="flex-row">
+				<div class="flex-row hilang">
 					<a href="masuk.html">Masuk</a>
 					<a href="daftar.html" class="button-pendek button-warna">Daftar</a>
 				</div>
@@ -105,7 +108,7 @@
 								
 							</div>
 						</div>
-						<div class="flex-row">
+						<div class="flex-row hilang">
 							<div class="flex-column box-katalog first">
 								<div>
 									<a class="" href="katalog.html">
@@ -159,21 +162,13 @@
 				<article id="tentang" class="padding-up">
 					<h1>Tentang Kami</h1>
 					<div class="flex-column">
-					   <div class="flex-row">
-							<div class="second">
-								<img src="gambar/tentang1.png" class="gambar-tentang" alt="tentang kami">
-							</div>
-							<div class="third">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor mauris faucibus leo lacus. Risus maecenas at rhoncus dignissim elementum nulla. Porttitor ornare aliquam consectetur sed. Amet sit sed congue lectus id in vel quis sit.</p>
-							</div>
+					   <div class="flex-row">	
+							<img src="gambar/tentang1.png" class="gambar-tentang second" alt="tentang kami">
+							<p class="third">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor mauris faucibus leo lacus. Risus maecenas at rhoncus dignissim elementum nulla. Porttitor ornare aliquam consectetur sed. Amet sit sed congue lectus id in vel quis sit.</p>
 						</div>
 						<div class="flex-row">
-							<div class="third">
-								<p>Eu volutpat varius quam ut id ultricies elit semper. Eget nec quis tortor diam sed. A ac tincidunt amet, sed. Tortor aenean vel massa diam. Cras morbi sollicitudin lorem vitae ac elit.</p>
-							</div>
-							<div class="second">
-								<img src="gambar/tentang2.png" class="gambar-tentang" alt="tentang kami">
-							</div>
+							<p class="third">Eu volutpat varius quam ut id ultricies elit semper. Eget nec quis tortor diam sed. A ac tincidunt amet, sed. Tortor aenean vel massa diam. Cras morbi sollicitudin lorem vitae ac elit.</p>
+							<img src="gambar/tentang2.png" class="gambar-tentang second" alt="tentang kami">
 						</div>
 					</div>
 				</article>

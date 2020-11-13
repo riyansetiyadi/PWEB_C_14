@@ -15,7 +15,7 @@ main div.container-slide {
 	position: relative; 
 	overflow: hidden; 
   background: #efefef;
-  margin:0px auto;
+  margin: 0px auto;
 	width: 100%;
 	height: 750px; 
 }
@@ -198,7 +198,33 @@ main article#kontak img.icon {
 }
 
 
+@media screen and (max-width: 768px) {
+  #slide {
+    height: 200px;
+  }
 
+  article#katalog div.flex-row, article#tentang div.flex-row {
+    flex-direction: column;
+    text-align: center;
+  }
+  main article#tentang div.flex-row {
+    margin-bottom: 0px;
+  }
+  #katalog, #tentang {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  main article#tentang img.gambar-tentang {
+    width: 80%;
+    margin: 20px auto;
+  }
+  article#kontak div.flex-row.tengah-atas {
+    flex-direction: column;
+  }
+  main article#kontak div.atur-margin {
+    margin: auto;
+  }
+}
 
 
 
