@@ -69,6 +69,9 @@ nav a#teks-lapaktani {
 nav a#teks-lapaktani span {
     color: red;
 }
+nav button.tombol-dropdown {
+  display: none;
+}
 nav div#pencarian {
     background-color: rgba(255, 255, 255, 0.30);
     border-radius: 15px;
@@ -86,11 +89,11 @@ nav img.icon {
     height: 20px;
     padding-right: 5px;
 }
-nav a.navigasi {
+.navigasi {
   border-top: 3px transparent solid;
   padding: 10px 0px;
 }
-nav a.navigasi:hover {
+.active, .navigasi:hover {
   border-top: 3px rgba(255, 255, 255, 0.3) solid;
 }
 
@@ -149,4 +152,52 @@ footer {
   font-size: 15px;
   text-align: center;
   padding: 20px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .hilang {
+    display: none;
+  }
+
+  nav {
+    position: static;
+  }
+  nav div.container.flex-row {
+    flex-direction: column;
+    height: fit-content;
+  }
+  nav div.flex-row {
+    align-items: unset;
+  }
+  nav div.flex-row.fixed {
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav div#pencarian input {
+    width: auto;
+  }
+  nav button.tombol-dropdown {
+    display: block;
+  }
+  nav div.dropdown-child{
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    height: fit-content;
+    background-color:  #22544B;
+    display: none;
+  }
+  .tombol-dropdown:hover nav div.dropdown-child{
+    display: flex;
+  }
+  nav div.dropdown-child a.navigasi {
+    padding: 10px;
+  }
+  nav div.dropdown-child a.navigasi:hover {
+    background-color: white;
+    color: black;
+  }
+  nav .container a:not(#icon-pencarian) {
+    margin: 0px 0px;
+  }
 }
