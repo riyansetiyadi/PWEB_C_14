@@ -43,3 +43,24 @@ main table tr td#tombol-beli {
 main aside {
     position: fixed;
 }
+@media screen and (max-width: 768px) {
+    main div.grid-content {
+        grid-template-columns: auto;
+        margin-bottom: 0px;
+    }
+    main aside {
+        bottom: 0px;
+        width: 100%;
+    }
+    main div.grid-content table {
+        border-radius: 0px;
+        opacity: 1;
+    }
+    h1 {
+        margin-left: 10px;
+    }
+    aside table tr {
+        border-top: 5px solid rgb(59, 59, 59);
+        border-bottom: 5px solid rgb(59, 59, 59);
+    }
+}

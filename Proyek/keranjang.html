@@ -9,14 +9,17 @@
     </head>
     <body>
         <nav>
-            <div class="container flex-row">
-                <div>
-                    <a href="index.html" id="teks-lapaktani"><span>LAPAK</span>TANI</a>
-                </div>
-                <div class="flex-row">
-                    <a href="katalog.html" class="navigasi">Katalog</a>
-                    <a href="index.html#tentang" class="navigasi">Tentang</a>
-                    <a href="index.html#kontak" class="navigasi">Kontak</a>
+            <div class="container flex-row">	
+                <a href="index.html" id="teks-lapaktani"><span>LAPAK</span>TANI</a>
+                <div class="flex-row fixed">
+                    <div>
+                        <button class="tombol-dropdown">Menu</button>
+                        <div class="flex-row dropdown-child">
+                            <a href="index.html#katalog" class="navigasi">Katalog</a>
+                            <a href="index.html#tentang" class="navigasi">Tentang</a>
+                            <a href="index.html#kontak" class="navigasi">Kontak</a>
+                        </div>
+                    </div>
                     <div class="flex-row" id="pencarian">
                         <input type="text" placeholder="Coba cari Rosa">
                         <a href="katalog.html" id="icon-pencarian">
@@ -27,7 +30,7 @@
                         <img src="icon/keranjang.png" alt="keranjang" class="icon">
                     </a>
                 </div>
-                <div class="flex-row">
+                <div class="flex-row hilang">
                     <a href="masuk.html">Masuk</a>
                     <a href="daftar.html" class="button-pendek button-warna">Daftar</a>
                 </div>
@@ -58,11 +61,11 @@
                                     <td>Subtotal</td>
                                     <td>Rp0</td>
                                 </tr>
-                                <tr>
+                                <tr class="hilang">
                                     <td>Pengiriman</td>
                                     <td>Rp0</td>
                                 </tr>
-                                <tr>
+                                <tr class="hilang">
                                     <td>Alamat</td>
                                     <td>
                                         <select name="" id="">
@@ -82,15 +85,15 @@
                                         <input type="text" placeholder="Masukkan kode promo">
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="hilang">
                                     <td></td>
                                     <td>Rp0</td>
                                 </tr>
-                                <tr>
+                                <tr class="hilang">
                                     <td>Total</td>
                                     <td>Rp0</td>
                                 </tr>
-                                <tr>
+                                <tr class="hilang">
                                     <td>Metode Pembayaran</td>
                                     <td>
                                         <select name="" id="pembayaran">
@@ -119,6 +122,6 @@
                 </div>
             </div>
         </main>
-        <footer>2000 - 2020 PT.Lapak Tani</footer>
+        <footer class="hilang">2000 - 2020 PT.Lapak Tani</footer>
     </body>
 </html>
