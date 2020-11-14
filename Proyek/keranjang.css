@@ -58,6 +58,7 @@ main aside {
     }
     h1 {
         margin-left: 10px;
+        font-size: 50px;
     }
     aside table tr {
         border-top: 5px solid rgb(59, 59, 59);
