@@ -47,6 +47,7 @@ main .medsos {
     justify-content: flex-start;
     align-items: center;
     margin-left: 50px;
+    
 }
 main input {
   height: 40px;
@@ -76,4 +77,16 @@ main button.google {
 .teks-hitam {
   color: black;
   font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  main div#formulir {
+    border-radius: 0px;
+    width: 100%;
+  }
+  main div.medsos{
+    font-size: 15px;
+  }
+  main .medsos{
+    margin-left: 25px;
+  }
 }
