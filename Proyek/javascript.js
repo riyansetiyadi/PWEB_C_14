@@ -32,3 +32,49 @@ function ubahPassword(){
         return false;
     }
 }
+
+let Jagung = {
+    nama : "jagung",
+    harga : 5000,
+    toko  :"Rosa olshop",
+}
+let Beras = {
+    nama : "Beras",
+    harga : 10000,
+    toko : "Rosa olshop"
+}
+let Cabai = {
+    nama : "Cabai",
+    harga : 20000,
+    toko : "Rosa olshop"
+}
+let Jeruk = {
+    nama : "jeruk",
+    harga : 10000,
+    toko : "Rosa olshop"
+}
+let Kentang = {
+    nama : "Kentang",
+    harga : 15000,
+    toko : "Rosa olshop"
+}
+let Semangka = {
+    nama : "Semangka",
+    harga : 8000,
+    toko : "Rosa olshop"
+}
+let Kubis = {
+    nama : "Kubis",
+    harga : 2500,
+    toko : "Rosa olshop"
+}
+let Terong = {
+    nama : "Terong",
+    harga : 5000,
+    toko : "Rosa olshop"
+}
+let Bombay = {
+    nama : "Bombay",
+    harga : 3000,
+    toko : "Rosa olshop"
+}
