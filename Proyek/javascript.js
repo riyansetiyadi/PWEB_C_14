@@ -1,6 +1,6 @@
 function formMasuk(){
-    var email = document.forms["masuk"]["email"].value;
-    var password = document.forms["masuk"]["password"].value;
+    let email = document.forms["masuk"]["email"].value;
+    let password = document.forms["masuk"]["password"].value;
     if (email == "") {
         alert("Email harus diisi");
         return false;
@@ -11,8 +11,8 @@ function formMasuk(){
     alert("Anda berhasil masuk");
 }
 function formDaftar(){
-    var email = document.forms["daftar"]["email"].value;
-    var password = document.forms["daftar"]["password"].value;
+    let email = document.forms["daftar"]["email"].value;
+    let password = document.forms["daftar"]["password"].value;
     if (email == "") {
         alert("Email harus diisi");
         return false;
@@ -23,7 +23,7 @@ function formDaftar(){
     alert("Anda berhasil mendaftar, silahkan masuk");
 }
 function ubahPassword(){
-    var email = document.forms["ubah"]["email"].value;
+    let email = document.forms["ubah"]["email"].value;
     if (email==""){
         alert('isi email anda');
         return false;
