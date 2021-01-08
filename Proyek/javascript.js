@@ -117,7 +117,7 @@ $(function() {
                     <tr>
                         <td>${post.nama}<br><strong>${post.toko}</strong></td>
                         <td>${post.harga}</td>
-                        <td><input type="number" value="1" style="width: 70px;"> ${post.tipe}</td>
+                        <td><input type="number" value="${post.kuantitas}" style="width: 70px;"> ${post.tipe}</td>
                         <td>${post.harga * post.kuantitas}</td>
                         <td><input type="button" value="Delete" onclick = "deleteRow(this)"></td>
                     </tr>
@@ -128,4 +128,14 @@ $(function() {
             `);
         }
     })
+})
+
+$('.dropdown-child').prepend("<a href='index.html' class='navigasi' id='teks-lapaktani'><span>LAPAK</span>TANI</a>");
+$('.dropdown-child').append("<a href='masuk.html' class='navigasi'>Masuk</a><a href='daftar.html' class='navigasi'>Daftar</a>");
+$('.tombol-dropdown').on('click', function(){
+    $(".dropdown-child").css("display", "flex");
+})
+
+$('.dropdown-child').on('click', function(){
+    $(".dropdown-child").css("display", "none");
 })
