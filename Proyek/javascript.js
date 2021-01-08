@@ -34,49 +34,67 @@ function ubahPassword(){
 }
 
 let Jagung = {
-    "nama" : "jagung",
+    "nama" : "Jagung",
     "harga" : 5000,
-    "toko"  :"Rosa olshop",
+    "toko" :"Rosa olshop",
+    "tipe" : "/pcs",
+    "kuantitas" : 30
 }
 let Beras = {
     "nama" : "Beras",
     "harga" : 10000,
-    "toko" : "Rosa olshop"
+    "toko" : "Rosa olshop",
+    "tipe" : "/kg",
+    "kuantitas" : 10
 }
 let Cabai = {
     "nama" : "Cabai",
     "harga" : 20000,
-    "toko" : "Rosa olshop"
+    "toko" : "Rosa olshop",
+    "tipe" : "/kg",
+    "kuantitas" : 5
 }
 let Jeruk = {
-    "nama" : "jeruk",
+    "nama" : "Jeruk",
     "harga" : 10000,
-    "toko" : "Rosa olshop"
+    "toko" : "Rosa olshop",
+    "tipe" : "/kg",
+    "kuantitas" : 3 
 }
 let Kentang = {
     "nama" : "Kentang",
     "harga" : 15000,
-    "toko" : "Rosa olshop"
+    "toko" : "Rosa olshop",
+    "tipe" : "/kg",
+    "kuantitas" : 4
 }
 let Semangka = {
     "nama" : "Semangka",
     "harga" : 8000,
-    "toko" : "Rosa olshop"
+    "toko" : "Rosa olshop",
+    "tipe" : "/kg",
+    "kuantitas" : 3
 }
 let Kubis = {
     "nama" : "Kubis",
     "harga" : 2500,
-    "toko" : "Rosa olshop"
+    "toko" : "Rosa olshop",
+    "tipe" : "/pcs",
+    "kuantitas" : 6
 }
 let Terong = {
     "nama" : "Terong",
     "harga" : 5000,
-    "toko" : "Rosa olshop"
+    "toko" : "Rosa olshop",
+    "tipe" : "/iket",
+    "kuantitas" : 4
 }
 let Bombay = {
     "nama" : "Bombay",
     "harga" : 3000,
-    "toko" : "Rosa olshop"
+    "toko" : "Rosa olshop",
+    "tipe" : "/pcs",
+    "kuantitas" : 5
 }
 
 function deleteRow(row){
