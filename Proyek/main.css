@@ -96,6 +96,9 @@ nav img.icon {
 .active, .navigasi:hover {
   border-top: 3px rgba(255, 255, 255, 0.3) solid;
 }
+nav img.tombol-dropdown {
+  display: none;
+}
 
 /* tombol */
 .button-pendek {
@@ -157,6 +160,9 @@ footer {
 @media screen and (max-width: 768px) {
   .hilang {
     display: none;
+  }
+  nav img.tombol-dropdown {
+    display: block;
   }
 
   nav {
