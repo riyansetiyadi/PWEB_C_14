@@ -6,19 +6,19 @@ body {
 main {
     padding-top: 70px;
 }
+main.container {
+    margin-right: 0px;
+}
 main img.tombol-kembali {
     height: 30px;
 }
-main div.latar-putih {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 80%;
-    width: 50%;
+main div.layar-putih {
     border-radius: 90px 0 0 0;
     background: linear-gradient(270deg, #91B47A 0%, #FFFFFF 100%);
     background-blend-mode: luminosity;
     z-index: -1;
+    text-align: center;
+    width: 50%;
 }
 main div.bagikan {
     position: absolute;
@@ -43,8 +43,9 @@ main div.bagikan img {
 }
 main div.keterangan-produk {
     justify-content: space-between;
+    height: 80vh;
 }
-main div.keterangan-produk img {
+main div.teks-produk img {
     width: 400px;
 }
 main div.keterangan-produk div.teks-produk div {
@@ -82,4 +83,29 @@ main a.tombol-panah span img {
 main a.tombol-biru {
     background-color: #7270FF;
     border: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    main div.flex-row.keterangan-produk {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: fit-content;
+    }
+    main div.layar-putih {
+        width: 100%;
+        border-radius: 0px;
+    }
+    main div.keterangan-produk div.teks-produk div {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    main div.bagikan {
+        position: static;
+        width: 100%;
+        border-radius: 0px;
+    }
+    main div.bagikan div#teks-bagikan {
+        font-size: 15px;
+        margin-right: 25px;
+    }
 }
