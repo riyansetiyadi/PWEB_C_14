@@ -5,11 +5,25 @@ body {
 nav {
   z-index: 1;
 }
-
-main div.container-slide {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+.img1 {
+  background-image: url("gambar/background1-index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img2 {
+  background-image: url("gambar/background2-index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img3 {
+  background-image: url("gambar/background3-index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img4 {
+  background-image: url("gambar/background4-index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #slide { 
 	position: relative; 
@@ -20,9 +34,10 @@ main div.container-slide {
 	height: 750px; 
 }
  
-#gambar-slide img { 
+#gambar-slide div { 
 	width: 25%;
-	float: left;
+  float: left;
+  height: 750px;
 }
  
 #gambar-slide {  
@@ -126,9 +141,29 @@ main div.container-slide {
       100% { left: 0; opacity: 0; }
 }
 
-main h1 {
+main .container h1 {
   text-align: center;
   padding: 60px;
+}
+main article#slide h1 {
+  text-align: left;
+  font-size: 75px;
+  padding-top: 250px;
+  padding-left: 100px;
+}
+main article#slide h3 {
+  text-align: left;
+  padding-left: 100px;
+}
+main article#slide .flex-column {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+main article#slide a.button-panjang-2 span {
+  background-color: #B0F398;
+  padding: 10px;
+  border-radius: 200px;
+  margin-left: 10px;
 }
 main article#katalog div.box-katalog {
   height: 400px;
@@ -198,6 +233,7 @@ main article#kontak img.icon {
 }
 
 
+
 @media screen and (max-width: 768px) {
   #slide {
     height: 200px;
@@ -225,6 +261,3 @@ main article#kontak img.icon {
     margin: auto;
   }
 }
-
-
-
