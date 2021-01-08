@@ -131,11 +131,11 @@ $(function() {
 })
 
 $('.dropdown-child').prepend("<a href='index.html' class='navigasi hilang-dekstop' id='teks-lapaktani'><span>LAPAK</span>TANI</a>");
-$('.dropdown-child').append("<a href='masuk.html' class='navigasi hilang-dekstop'>Masuk</a><a href='daftar.html' class='navigasi'>Daftar</a>");
+$('.dropdown-child').append("<a href='masuk.html' class='navigasi hilang-dekstop'>Masuk</a><a href='daftar.html' class='navigasi hilang-dekstop'>Daftar</a>");
 $('.tombol-dropdown').on('click', function(){
     $(".dropdown-child").css("display", "flex");
+    $('.dropdown-child').on('click', function(){
+        $(".dropdown-child").css("display", "none");
+    })
 })
 
-$('.dropdown-child').on('click', function(){
-    $(".dropdown-child").css("display", "none");
-})
