@@ -44,13 +44,18 @@
             <div class="container grid-content">
                 <div>
                     <table>
-                        <th>
-                            <td>Produk</td>
-                            <td>Harga</td>
-                            <td>Kuantitas</td>
-                            <td>Total</td>
-                            <td></td>
-                        </th>
+                        <thead>
+                            <tr>
+                                <td>Produk</td>
+                                <td>Harga</td>
+                                <td>Kuantitas</td>
+                                <td>Total</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody id="display-keranjang">
+
+                        </tbody>
                     </table>
                 </div>
                 <div>
@@ -59,7 +64,7 @@
                             <table>
                                 <tr>
                                     <td>Subtotal</td>
-                                    <td>Rp0</td>
+                                    <td id="total-harga">Rp0</td>
                                 </tr>
                                 <tr class="hilang">
                                     <td>Pengiriman</td>
@@ -123,5 +128,7 @@
             </div>
         </main>
         <footer class="hilang">2000 - 2020 PT.Lapak Tani</footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="javascript.js"></script>
     </body>
 </html>

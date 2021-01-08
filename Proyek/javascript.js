@@ -78,3 +78,36 @@ let Bombay = {
     "harga" : 3000,
     "toko" : "Rosa olshop"
 }
+
+function deleteRow(row){
+    var d = row.parentNode.parentNode;
+    d.parentNode.removeChild(d);
+}
+
+$(function() {
+    $.ajax({
+        url: `/keranjang.json`,
+        success: function(data) {
+            $('#jagung').on('click', function() {
+                data.push(Jagung)
+            console.log(data)
+            })
+            let totalHarga = 0;
+            data.map((post) => {
+                totalHarga += post.harga * post.kuantitas;
+                $('#display-keranjang').append(`
+                    <tr>
+                        <td>${post.nama}<br><strong>${post.toko}</strong></td>
+                        <td>${post.harga}</td>
+                        <td><input type="number" value="1" style="width: 70px;"> ${post.tipe}</td>
+                        <td>${post.harga * post.kuantitas}</td>
+                        <td><input type="button" value="Delete" onclick = "deleteRow(this)"></td>
+                    </tr>
+                `)
+            })
+            $('#total-harga').append(`
+                Rp${totalHarga}
+            `);
+        }
+    })
+})
