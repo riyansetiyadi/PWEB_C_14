@@ -48,6 +48,10 @@ a {
   flex-grow: 4;
 }
 
+.hilang-dekstop {
+  display: none;
+}
+
 /* navigasi */
 nav {
     position: fixed;
@@ -162,6 +166,10 @@ footer {
     display: none;
   }
   nav img.tombol-dropdown {
+    display: block;
+  }
+
+  .hilang-dekstop {
     display: block;
   }
 
